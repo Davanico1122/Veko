@@ -1,0 +1,4 @@
+
+say: "Hello, Veko!"
+x <- 10 + 5
+say: x

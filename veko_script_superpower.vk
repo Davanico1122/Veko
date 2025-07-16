@@ -1,0 +1,70 @@
+
+# =======================================
+# Veko Superpower Script Showcase
+# =======================================
+
+say: "💛 Welcome to Veko Superpower Demo"
+
+name <- ask
+say: "Hi,"
+say: name
+
+x <- 5 + 10
+y <- 20
+z <- x + y
+
+say: "Sum of x + y is:"
+say: z
+
+when z > 20 {
+  say: "Total is greater than 20"
+} else {
+  say: "Not that much"
+}
+
+loop 3 times {
+  say: "Counting loop..."
+}
+
+fn menu {
+  say: "=== MENU ==="
+  say: "1. Print Hello"
+  say: "2. Repeat your name"
+  say: "3. Multiply something"
+}
+
+call menu
+
+choice <- ask
+
+when choice == 1 {
+  say: "Hello from option 1!"
+}
+when choice == 2 {
+  loop 2 times {
+    say: name
+  }
+}
+when choice == 3 {
+  a <- 3
+  b <- 4
+  c <- a * b
+  say: "Result:"
+  say: c
+}
+
+# === Demo While Loop ===
+n <- 0
+while n < 5 {
+  say: "n is:"
+  say: n
+  n <- n + 1
+}
+
+# === Demo Function Call Again ===
+fn greet {
+  say: "🌟 You called greet() function!"
+}
+call greet
+
+say: "End of Superpower Demo"
